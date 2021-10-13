@@ -1,0 +1,9 @@
+{
+  "colapseSidebarButtom" : "div[class='vs-c-list__btn']",
+  "addOrganizationButton" : ".vs-c-list > :nth-child(1) > a",
+  "addBoardButton" : "li:nth-of-type(2) > a > span",
+  "importBoardButton" : "li:nth-of-type(3) > a > span",
+  "organizationListButton" : ".collapsed.vs-c-btn.vs-c-btn--link.vs-c-btn--sm.vs-c-list__caret",
+  "userAccountButton" : "div[class='vs-l-sidebar__user']",
+  "selectBoard" : "a[class='vs-c-list__btn router-link-exact-active router-link-active active']" 
+}

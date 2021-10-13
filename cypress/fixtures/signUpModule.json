@@ -1,0 +1,9 @@
+{
+  "freeSignupButton" : "a[onclick='goToSignUpCard('starter', 'yearly')']",
+  "emailInput" : "input[type='email']",
+  "passwordInput" : "input[type='password']",
+  "numberOfUsersInput" : "input[name='number_of_users']",
+  "checkbox" : "input[type='checkbox']",
+  "signupButton" : "button[type='submit']",
+  "loginLink" : "a[href='/login']"
+}

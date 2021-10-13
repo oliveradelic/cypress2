@@ -1,0 +1,18 @@
+{
+  "email" : "olivera.delic+1@vivifyideas.com",
+  "password" : "test12345",
+  "invalidEmail" : "oli@dd.com",
+  "invalidPassword" : "oliddcom",
+  "withoutEt" : "olja.com",
+  "withoutDotcom" : "olja@",
+  "numberOfUsers" : "1",
+  "numberOfUsersString" : "ghj",
+  "passLessThan5" : "test",
+  "nameOrg" : "Moon",
+  "updateOrgName" : "Flymetothemoon",
+  "boardTitleInput" : "Planet",
+  "updateBoardName" : "Planet2",
+  "columName" : "Bugs",
+  "itemName" : "Big issue",
+  "textarea" : "Bug Fixes"
+}
