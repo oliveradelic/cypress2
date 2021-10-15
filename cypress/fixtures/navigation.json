@@ -1,0 +1,10 @@
+{
+  "logoButton" : ".vs-c-site-logo.vs-u-cursor--pointer",
+  "searchButton" : "div[class='vs-c-search']",
+  "showSprintsButton" : "button[name='show_finished_sprints']",
+  "showViewButton" : ".vs-c-sprint-info > button:nth-of-type(2)",
+  "moreOptionsButton" : ".el-dropdown > .el-tooltip.vs-c-btn.vs-c-btn--link",
+  "showFiltersButton" : ".vs-c-dropdown-wrapper.vs-c-filter > .el-badge.el-tooltip > .vs-c-btn.vs-c-btn--link",
+  "showNotificationsButton" : ".vs-c-dropdown-wrapper.vs-c-notification > .el-badge.el-tooltip > .vs-c-btn.vs-c-btn--link",
+  "howItWorksButton" : ".vs-l-project__options > .el-tooltip.vs-c-btn.vs-c-btn--link"
+}

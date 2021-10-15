@@ -1,0 +1,15 @@
+{
+  "emailInput" : "input[name='email']",
+  "passwordInput" : "input[type='password']",
+  "forgotPasswordButton" : ".vs-c-auth-modal__body-text.vs-c-auth-modal__body-text--small",
+  "loginButton" : "button[type='submit']",
+  "backToHomeButton" : ".vs-c-auth-modal__body-text.vs-u-font-bold.vs-u-text--uppercase",
+  "googleDisabledButton" : "button.vs-c-btn.vs-c-btn--social-auth.vs-c-btn--gp.disabled",
+  "facebookButton" : ".vs-c-btn.vs-c-btn--fb.vs-c-btn--social-auth",
+  "twitterButton" : ".vs-c-btn.vs-c-btn--social-auth.vs-c-btn--tw",
+  "regzenButton" : ".vs-c-btn.vs-c-btn--regzen.vs-c-btn--social-auth",
+  "signUpLink" : ".vs-c-auth-modal__bottom-text-main.vs-u-font-bold.vs-u-text--uppercase",
+  "userProfile" : ".vs-l-sidebar__user > a  img",
+  "profile" : "a[href='/account/settings']",
+  "logOutButton" : ".vs-c-btn.vs-c-btn--danger.vs-c-btn--link"
+}
