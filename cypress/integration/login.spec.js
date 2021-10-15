@@ -1,5 +1,5 @@
 /// <reference types ="Cypress" />
-const loginPage = require('../fixtures/loginModule.json');
+import loginPage from '../fixtures/loginModule.json';
 import data from '../fixtures/data.json';
 
 describe('login', () => {

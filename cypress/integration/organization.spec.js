@@ -1,4 +1,4 @@
-const loginPage = require('../fixtures/loginModule.json');
+import loginPage from '../fixtures/loginModule.json';
 import data from '../fixtures/data.json';
 import organizationPage from '../fixtures/createOrganization.json';
 import sidebar from '../fixtures/sidebar.json';

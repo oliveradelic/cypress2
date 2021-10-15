@@ -1,5 +1,5 @@
 /// <reference types ="Cypress" />
-const registerPage = require('../fixtures/signUpModule.json');
+import registerPage from '../fixtures/signUpModule.json';
 import data from '../fixtures/data.json';
 
 describe('register', () => {
