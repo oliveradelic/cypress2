@@ -1,3 +1,7 @@
 {
-  "baseUrl" : "https://cypress.vivifyscrum-stage.com"
+  "baseUrl" : "https://cypress.vivifyscrum-stage.com",
+  "env": {
+    "username": "olivera.delic+1@vivifyideas.com",
+    "password": "test12345"
+  }
 }
