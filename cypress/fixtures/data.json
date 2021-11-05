@@ -7,6 +7,7 @@
   "withoutDotcom" : "olja@",
   "numberOfUsers" : "1",
   "numberOfUsersString" : "ghj",
+  "numberOfUsersEmpty" : "",
   "passLessThan5" : "test",
   "nameOrg" : "Moon",
   "updateOrgName" : "Flymetothemoon",
