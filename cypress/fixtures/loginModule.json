@@ -9,7 +9,7 @@
   "twitterButton" : ".vs-c-btn.vs-c-btn--social-auth.vs-c-btn--tw",
   "regzenButton" : ".vs-c-btn.vs-c-btn--regzen.vs-c-btn--social-auth",
   "signUpLink" : ".vs-c-auth-modal__bottom-text-main.vs-u-font-bold.vs-u-text--uppercase",
-  "userProfile" : ".vs-l-sidebar__user > a  img",
-  "profile" : "a[href='/account/settings']",
+  "userProfile" : ".vs-u-img--round",
+  "profile" : "[data-cy=account-profile] > span > div > .vs-c-site-logo",
   "logOutButton" : ".vs-c-btn.vs-c-btn--danger.vs-c-btn--link"
 }
