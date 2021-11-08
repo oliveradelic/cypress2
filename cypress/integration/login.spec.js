@@ -1,29 +1,23 @@
 /// <reference types ="Cypress" />
 import data from '../fixtures/data.json';
 import authModule from '../models/authModule';
-import faker from 'faker';
 
 describe('login', () => {
-  let user = {
-    email: faker.internet.email(),
-    password: faker.internet.password(),
-  };
-
   beforeEach(() => {
     cy.intercept('/login').as('login');
     cy.visit('/');
   });
 
   it('login with invalid credentials', () => {
-    authModule.login({ email: user.email, password: data.invalidPassword });
+    authModule.login({ email: data.invalidEmail, password: data.invalidPassword });
   });
 
   it('login with invalid email', () => {
-    authModule.login({ email: user.email });
+    authModule.login({ email: data.invalidEmail });
   });
 
   it('email without @', () => {
-    authModule.login({ email: user.email });
+    authModule.login({ email: data.withoutEt });
   });
 
   it('email without .com', () => {
@@ -35,10 +29,11 @@ describe('login', () => {
   });
 
   it('valid login', () => {
-    authModule.login({ timeout: 3000 });
+    authModule.login({});
+    cy.wait('@login');
   });
 
   after(() => {
-    authModule.logout();
+    authModule.logout({});
   });
 });

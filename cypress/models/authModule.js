@@ -30,9 +30,7 @@ module.exports = {
   },
 
   login({ email = data.email, password = data.password }) {
-    if (email == '' || password == '') {
-      this.submitButton.click();
-    } else if (password == '') {
+    if (password == '') {
       this.emailInput.should('be.visible').type(email);
       this.submitButton.click();
     } else {
@@ -40,19 +38,14 @@ module.exports = {
       this.emailInput.should('be.visible').type(email);
       this.passwordInput.should('be.visible').type(password);
       this.loginButton.click();
-      if (email == data.email && password == data.password) {
-        cy.wait('@login').then((intercept) => {
-          expect(intercept.response.statusCode).to.eql(200);
-        });
-      }
     }
   },
 
   logout() {
     cy.intercept('POST', '**/api/v2/logout').as('logout');
-    this.userProfile.should('be.visible').click();
-    this.profile.should('be.visible').click();
-    this.logOutButton.should('be.visible').click();
+    this.userProfile.should('be.visible').click({ force: true });
+    this.profile.should('be.visible').click({ force: true });
+    this.logOutButton.should('be.visible').click({ force: true });
     cy.wait('@logout').then((intercept) => {
       expect(intercept.response.statusCode).to.eql(201);
     });

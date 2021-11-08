@@ -6,14 +6,15 @@ describe('organization', () => {
   beforeEach(() => {
     cy.intercept('/login').as('login');
     cy.visit('/');
-    authModule.login({ timeout: 4000 });
+    authModule.login({});
+    cy.wait('@login');
   });
 
-  it.skip('create organization', () => {
+  it('create organization', () => {
     organizationModule.organization({ nameInput: data.nameInput });
   });
 
-  it.skip('update organization', () => {
+  it('update organization', () => {
     organizationModule.organizationUpdate({ updateOrgName: data.updateOrgName });
   });
 
