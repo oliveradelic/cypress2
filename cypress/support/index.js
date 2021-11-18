@@ -23,3 +23,29 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   // failing the test
   return false;
 });
+import 'cypress-file-upload';
+import 'cypress-real-events/support';
+
+import './commands';
+
+Cypress.Commands.add('setupAssertTests', () => {
+  cy.request('DELETE', '/api/boards');
+  cy.intercept('/login').as('login');
+  cy.visit('/');
+});
+
+Cypress.Commands.add(
+  'login',
+  (username = Cypress.env('username'), password = Cypress.env('password')) => {
+    cy.get('input[type="email"]').click();
+    cy.get('input[type="email"]').type(username);
+    cy.get('input[type="password"]').type(password);
+    cy.get('button[type="submit"]').click();
+    cy.wait('@login');
+  }
+);
+
+Cypress.Commands.add('logout', () => {
+  cy.get('[data-cy=logged-user]').click();
+  cy.get('[data-cy=logout]').click();
+});
