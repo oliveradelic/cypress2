@@ -1,0 +1,8 @@
+ {
+  "baseUrl": "https://stage.vivifyscrum.com/",
+  "env": {
+    "variable": "qa",
+    "username": "olivera.delic+1@vivifyideas.com",
+    "password": "test12345"
+  }
+}

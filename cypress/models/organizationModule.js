@@ -49,7 +49,7 @@ module.exports = {
   },
   get newOrganization() {
     return cy.get(
-      '.vs-c-my-organizations-item-wrapper > div:nth-of-type(2)  .vs-c-my-organization__list.vs-c-my-organization__users > li > img'
+      ':nth-child(2) > :nth-child(1) > :nth-child(1) > [effect="dark"] > .vs-c-list__btn > .vs-c-list__oragnisation-item > :nth-child(2)'
     );
   },
   get xButton() {
@@ -86,6 +86,7 @@ module.exports = {
     this.nameInput.should('be.visible').type(nameInput);
     this.nextButton.click();
     this.createButton.click();
+    //this.xButton.click();
   },
   organizationUpdate({ updateOrgName = data.updateOrgName }) {
     cy.intercept('POST', '**/api/v2/organizations').as('organization');
@@ -97,9 +98,9 @@ module.exports = {
   },
   organizationDelete({ password = data.password }) {
     cy.intercept('POST', '**/api/v2/organizations').as('organization');
-    this.newOrganization.click({ force: true });
-    this.xButton.click();
-    this.configurationButton.click();
+    //this.newOrganization.click({ force: true });
+    //this.xButton.click();
+    this.configurationButton.click({ force: true });
     this.deleteOrganizationButton.click();
     this.password.should('be.visible').type(password);
     this.confirmButtonDelete.click();

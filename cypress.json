@@ -1,5 +1,14 @@
 {
-  "baseUrl" : "https://cypress.vivifyscrum-stage.com",
+  "baseUrl" : "https://cypress.vivifyscrum-stage.com/",
+  "viewportHeight": 500,
+  "viewportWidth": 700,
+  "video": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
   "env": {
     "username": "olivera.delic+1@vivifyideas.com",
     "password": "test12345"
