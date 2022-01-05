@@ -1,3 +1,4 @@
+import data from '../fixtures/data.json';
 import faker from 'faker';
 import colorC from '../support/consoleColor';
 
@@ -6,7 +7,7 @@ module.exports = {
     return cy
       .request({
         method: 'GET',
-        url: 'https://cypress-api.vivifyscrum-stage.com/api/v2/organizations-data',
+        url: Cypress.env('organizationsData_url'),
         headers: {
           Authorization: `Bearer${token}`,
         },
@@ -22,7 +23,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: 'POST',
-        url: 'https://cypress-api.vivifyscrum-stage.com/api/v2/organizations',
+        url: Cypress.env('organizations_url'),
         body: {
           name: orgName,
         },
@@ -65,7 +66,7 @@ module.exports = {
     token = '',
     statusCode = 200,
     testMessage = '',
-    password = 'test12345',
+    password = data.password,
   }) {
     return cy
       .request({

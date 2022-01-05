@@ -40,5 +40,6 @@
   "headerDelete" : "[class='vs-l-project__nav']",
   "newBoardItem" : "[class='vs-c-organization-boards__item--add-new']",
   "routerLink" : "[class='vs-c-site-logo router-link-exact-active router-link-active']",
-  "addNewBoardButton" : ".vs-c-btn.vs-c-btn--primary.vs-c-btn--spaced.vs-c-btn--spaced-no-icon.vs-c-btn--spaced-sm.vs-u-text--uppercase"
+  "addNewBoardButton" : ".vs-c-btn.vs-c-btn--primary.vs-c-btn--spaced.vs-c-btn--spaced-no-icon.vs-c-btn--spaced-sm.vs-u-text--uppercase",
+  "siteLogo" : "li:nth-of-type(1) > span > div > .vs-c-site-logo"
 }

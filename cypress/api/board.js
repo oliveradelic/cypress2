@@ -16,7 +16,7 @@ module.exports = {
     return cy
       .request({
         method: 'GET',
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/organizations/8071/boards-data`,
+        url: Cypress.env('board_data'),
         headers: {
           Authorization: `Bearer${token}`,
         },
@@ -38,11 +38,11 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: 'POST',
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/boards`,
+        url: Cypress.env('boards_url'),
         body: {
           name: boardName,
           configuration_board_id: null,
-          organization_id: 8071,
+          organization_id: 8070,
           team_members_board_id: null,
           type: typeBoard,
         },
