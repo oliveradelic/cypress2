@@ -98,8 +98,8 @@ module.exports = {
   },
   organizationDelete({ password = data.password }) {
     cy.intercept('POST', '**/api/v2/organizations').as('organization');
-    //this.newOrganization.click({ force: true });
-    //this.xButton.click();
+    this.newOrganization.click({ force: true });
+    this.xButton.click();
     this.configurationButton.click({ force: true });
     this.deleteOrganizationButton.click();
     this.password.should('be.visible').type(password);

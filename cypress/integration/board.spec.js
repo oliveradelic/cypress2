@@ -61,11 +61,7 @@ describe('board', () => {
     //assertions
     cy.get(boardPage.taskTitle).eq(1).should('have.text', 'Big issue');
     cy.get(boardPage.taskTitle).should('have.length', 4);
-    cy.get('li:nth-of-type(1) > span > div > .vs-c-site-logo').should(
-      'have.css',
-      'background-color',
-      'rgb(254, 87, 35)'
-    );
+    cy.get(boardPage.siteLogo).should('have.css', 'background-color', 'rgb(254, 87, 35)');
   });
 
   it('start sprint', () => {

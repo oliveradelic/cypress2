@@ -1,5 +1,6 @@
 {
   "baseUrl" : "https://cypress.vivifyscrum-stage.com/",
+  "originUrl" : "https://cypress-api.vivifyscrum-stage.com/api/v2",
   "viewportHeight": 500,
   "viewportWidth": 700,
   "video": false,
@@ -10,7 +11,12 @@
     "json": true
   },
   "env": {
-    "username": "olivera.delic+1@vivifyideas.com",
-    "password": "test12345"
+    "username" : "olivera.delic+1@vivifyideas.com",
+    "password" : "test12345",
+    "login_url" : "https://cypress-api.vivifyscrum-stage.com/api/v2/login",
+    "organizations_url" : "https://cypress-api.vivifyscrum-stage.com/api/v2/organizations",
+    "organizationsData_url" : "https://cypress-api.vivifyscrum-stage.com/api/v2/organizations-dat",
+    "boards_url" : "https://cypress-api.vivifyscrum-stage.com/api/v2/boards",
+    "board_data" : "https://cypress-api.vivifyscrum-stage.com/api/v2/organizations/8070/boards-data"
   }
 }

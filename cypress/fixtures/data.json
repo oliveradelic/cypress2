@@ -5,6 +5,7 @@
   "invalidPassword" : "oliddcom",
   "withoutEt" : "olja.com",
   "withoutDotcom" : "olja@",
+  "withSpaceInfront" : "@gmail.com",
   "numberOfUsers" : "1",
   "numberOfUsersString" : "ghj",
   "numberOfUsersEmpty" : "",
